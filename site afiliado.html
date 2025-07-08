@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recomendações de produtos de beleza e cuidados pessoais com frete grátis e ótimo custo-benefício">
+    <meta name="keywords" content="beleza, cuidados pessoais, produtos femininos, recomendações, skincare">
+    <title>Produtos Incríveis para Sua Beleza | Recomendações Pessoais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neonBlue: '#00f7ff',
+                        neonPink: '#ff00f7',
+                        neonPurple: '#bd00ff',
+                        darkBg: '#0f0f15',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Poppins', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-blue': '0 0 10px #00f7ff, 0 0 20px #00f7ff80',
+                        'neon-pink': '0 0 10px #ff00f7, 0 0 20px #ff00f780',
+                        'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f15;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .hero-overlay {
+            background: rgba(15, 15, 21, 0.7);
+            backdrop-filter: blur(2px);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .gallery-container {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(189, 0, 255, 0.5) transparent;
+        }
+        
+        .gallery-container::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        .gallery-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .gallery-container::-webkit-scrollbar-thumb {
+            background-color: rgba(189, 0, 255, 0.5);
+            border-radius: 20px;
+        }
+        
+        .product-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(189, 0, 255, 0.5);
+        }
+        
+        .neon-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .neon-btn:hover {
+            box-shadow: 0 0 15px rgba(0, 247, 255, 0.7), 0 0 30px rgba(0, 247, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px rgba(0, 247, 255, 0.7), 0 0 10px rgba(0, 247, 255, 0.4);
+        }
+        
+        .neon-text-pink {
+            text-shadow: 0 0 5px rgba(255, 0, 247, 0.7), 0 0 10px rgba(255, 0, 247, 0.4);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(189, 0, 255, 0.1) 0%, rgba(15, 15, 21, 0.8) 100%);
+            border: 1px solid rgba(189, 0, 255, 0.3);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                background-position: 60% center;
+            }
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section relative h-screen w-full flex items-center justify-center">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-title font-bold mb-4 text-white neon-text">Produtos incríveis para sua beleza</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-300">Recomendações pessoais com frete grátis e ótimo custo-benefício</p>
+            <a href="#produtos" class="neon-btn inline-block bg-gradient-to-r from-neonBlue to-neonPurple text-black font-bold py-3 px-8 rounded-full text-lg shadow-lg">
+                Ver Produtos
+            </a>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#produtos" class="animate-bounce">
+                <svg class="w-10 h-10 text-neonBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-16 bg-darkBg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-title font-bold mb-12 text-center neon-text-pink">Nossas Recomendações</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Removedor De Cravos Espinhas Cleaning Sugador Poros Acne Sucção Usb Recarregável</h3>
+                    <p class="text-gray-300 mb-4">Dispositivo prático para remoção de cravos e espinhas com tecnologia de sucção USB recarregável.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943449/ec8a6461ed49adb8f388bc4ed0e39200_n5x8t5.webp" alt="Removedor de cravos espinhas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943443/842c7ede4f8a885c442c398944fb81a3_uudncb.webp" alt="Removedor de cravos espinhas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943437/343fde1c916fb27df2c630383acc11dd_sw1fgr.webp" alt="Removedor de cravos espinhas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943432/99c9c1ecc4bc7fb3d5a0128686815b57_ouog4h.webp" alt="Removedor de cravos espinhas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Removedor_De_Cravos_Espinhas')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Caneta Led 45nm Luz Azul Acne Terapia Cicatriz Mancha Rugas</h3>
+                    <p class="text-gray-300 mb-4">Terapia com luz azul para tratamento de acne, cicatrização e redução de rugas.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751940102/br-11134211-7r98o-ltzpdkyjkrys1b_v04g87.webp" alt="Caneta Led 45nm Luz Azul" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751940101/br-11134211-7r98o-ltzp5mqdg8rp40_hojwty.webp" alt="Caneta Led 45nm Luz Azul" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751940101/br-11134211-7r98o-ltzp5mqdhnc5d2_bsgeqm.webp" alt="Caneta Led 45nm Luz Azul" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Caneta_Led_45nm')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Depilador de Cristal Reutilizável Indolor Portátil</h3>
+                    <p class="text-gray-300 mb-4">Depilação indolor e reutilizável com cristal, prática e portátil para uso em qualquer lugar.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941354/br-11134207-7r98o-lo7ft39g123037_dzwq1k.webp" alt="Depilador de Cristal" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941352/br-11134207-7r98o-lo7ft39g12nd76_unxze8.webp" alt="Depilador de Cristal" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941350/br-11134207-7r98o-lo7ft39g12knbc_vu2nbm.webp" alt="Depilador de Cristal" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Depilador_de_Cristal')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Escova Secadora Alisador Elétrica Quente Cabelo Com 3 Em1 Hair Styler 110V</h3>
+                    <p class="text-gray-300 mb-4">Escova 3 em 1 que seca, alisa e modela seus cabelos com praticidade.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942224/sg-11134201-22090-b7akhlp9axhva4_vxb4wb.webp" alt="Escova Secadora Alisador Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942219/sg-11134201-22090-7iyrbqb9axhvd4_hwwv4j.webp" alt="Escova Secadora Alisador Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942215/d6a53dc664ec24a86b472ce490ebeec4_rmkbtp.webp" alt="Escova Secadora Alisador Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Escova_Secadora_Alisador')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Escova Elétrica 5 em 1 Limpeza Facial Massageadora Esfoliação</h3>
+                    <p class="text-gray-300 mb-4">Escova multifuncional para limpeza facial profunda, massagem e esfoliação.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941614/adc07b6ed31e40295e8ee17f7644fc54_hiqqfa.webp" alt="Escova Elétrica 5 em 1" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941612/0385f1cb2f85723c08db3e1d98f207d7_um8ubu.webp" alt="Escova Elétrica 5 em 1" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751941609/84f4ef013d9a82e327d9fb8d1b1305fe_xw8f3s.webp" alt="Escova Elétrica 5 em 1" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Escova_Eletrica_5em1')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Nano Névoa Facial Elétrica Profissional Pulverizador De Vaporizador</h3>
+                    <p class="text-gray-300 mb-4">Névoa facial elétrica profissional para hidratação profunda da pele.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943356/c3ddeb15626bf70eac72f0f2ca573724_pamutp.webp" alt="Nano Névoa Facial Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943350/a5450fd20188846cf19269b73ea4f78c_ppeob3.webp" alt="Nano Névoa Facial Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943342/662a5afeb33e2b5e3b0268cd2c026115_b51rvc.webp" alt="Nano Névoa Facial Elétrica" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Nano_Nevoa_Facial')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Massageador Aparelho De Beleza Para Pescoço Facial Com Vibração de Ondas Luminosas Anti-Rugas</h3>
+                    <p class="text-gray-300 mb-4">Massageador facial com vibração e luz para redução de rugas e linhas de expressão.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943109/br-11134207-7r98o-lvklbnlwy2of04_rwjypf.webp" alt="Massageador Facial Anti-Rugas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943103/br-11134207-7r98o-lvklbnlwwo3z9f_vgi44e.webp" alt="Massageador Facial Anti-Rugas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943096/br-11134207-7r98o-lvklbnlwv9jj03_hc45t3.webp" alt="Massageador Facial Anti-Rugas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Massageador_Facial_AntiRugas')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Kit c/ 10 unidades Mascara Facial Coreana Skin care Soft Skin Sua pele linda Fresh Mask Tecido Sheet Hidratante/Colágeno</h3>
+                    <p class="text-gray-300 mb-4">Máscaras faciais coreanas em tecido para hidratação profunda e tratamento de colágeno.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942334/br-11134207-7r98o-lz0mtn06rhhdff_nfxdlh.webp" alt="Mascara Facial Coreana" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942323/br-11134207-7r98o-lz0mtn06ooch39_cjwujs.webp" alt="Mascara Facial Coreana" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942313/br-11134207-7r98o-lz0mtn06lv7l84_baw1na.webp" alt="Mascara Facial Coreana" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Mascara_Facial_Coreana')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 9 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Removedor De Maquiagem Com Sabor De Frutas , Suave E Não Irritante , Remove Rapidamente Cílios Postiços Enxertados</h3>
+                    <p class="text-gray-300 mb-4">Removedor de maquiagem suave com fragrância de frutas, ideal para cílios postiços.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943482/sg-11134301-7rd67-luzu3udyvurq60_peoz1q.webp" alt="Removedor De Maquiagem Com Sabor De Frutas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943476/sg-11134301-7rd44-luzu3udyvu6n04_hrhuug.webp" alt="Removedor De Maquiagem Com Sabor De Frutas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943470/sg-11134301-7rd5m-luzu3udyvurt37_d02ozu.webp" alt="Removedor De Maquiagem Com Sabor De Frutas" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Removedor_Maquiagem_Frutas')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 10 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Modelador de cabelo automático sem fio com bateria recarregável de cerâmica embutida marisa</h3>
+                    <p class="text-gray-300 mb-4">Modelador automático sem fio com tecnologia de cerâmica para cachos perfeitos.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943287/sg-11134201-7rd72-lwhfdevavxhc5c_dcpncq.webp" alt="Modelador de cabelo automático" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943281/sg-11134201-7rd69-lwhfd611tnnq5b_tkj8hx.webp" alt="Modelador de cabelo automático" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943275/sg-11134201-7rd49-lwhfd3m7cqjyae_lmhyib.webp" alt="Modelador de cabelo automático" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Modelador_Cabelo_Automatico')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 11 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Mini Geladeira Portátil 8 litros D&Z</h3>
+                    <p class="text-gray-300 mb-4">Geladeira portátil para armazenar seus produtos de beleza e manter a temperatura ideal.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943152/c0b12527c68c40931106ee183adb6f2e_br86do.webp" alt="Mini Geladeira Portátil" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943146/40189003d4a29e91487d97b7f9cd679d_bpplbj.webp" alt="Mini Geladeira Portátil" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751943140/637d15b83623efd8ccc87043c542d424_cx0ips.webp" alt="Mini Geladeira Portátil" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Mini_Geladeira_Portatil')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+                
+                <!-- Product 12 -->
+                <div class="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-neon-blue">
+                    <h3 class="text-xl font-bold mb-3">Kit de Aparador de Sobrancelha Mulheres Inclui Facial Face Razors Eyebrow Escova Tesoura Pinça Com Saco De Armazenamento</h3>
+                    <p class="text-gray-300 mb-4">Kit completo para cuidados com as sobrancelhas, incluindo todos os acessórios necessários.</p>
+                    
+                    <div class="gallery-container flex overflow-x-auto space-x-3 mb-4 py-2">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942437/sg-11134201-7rdxo-m13bv7lnyz8p10_bsoeoi.webp" alt="Kit Aparador de Sobrancelha" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942431/sg-11134201-7rdxi-m13bv9t0qupg2e_odksgu.webp" alt="Kit Aparador de Sobrancelha" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                        <img src="https://res.cloudinary.com/dqpwjayul/image/upload/v1751942426/sg-11134201-7rdx5-m13bvg0ds7hw22_f5t3ws.webp" alt="Kit Aparador de Sobrancelha" class="product-image h-32 rounded-lg object-cover flex-shrink-0">
+                    </div>
+                    
+                    <button onclick="trackProduct('Kit_Aparador_Sobrancelha')" class="neon-btn w-full bg-gradient-to-r from-neonPurple to-neonPink text-white font-bold py-2 px-4 rounded-lg">
+                        Ver Produto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="py-16 bg-gradient-to-b from-darkBg to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="glass-card rounded-xl p-8 md:p-12 max-w-4xl mx-auto">
+                <h2 class="text-3xl font-title font-bold mb-6 text-center neon-text">Por que indico?</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Minhas recomendações são baseadas em experiência pessoal e avaliações criteriosas de cada produto. 
+                    Testei muitos itens no mercado e selecionei apenas aqueles que realmente oferecem qualidade e 
+                    bom custo-benefício.
+                </p>
+                <p class="text-lg text-gray-300">
+                    <span class="font-bold text-neonBlue">Importante:</span> Eu não vendo esses produtos diretamente. Minha função é apenas indicar itens que considero 
+                    interessantes, com base em minha experiência e pesquisa. As compras são realizadas diretamente nos 
+                    sites dos vendedores, com toda a segurança e garantias oferecidas por eles.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-title font-bold mb-12 text-center neon-text-pink">O que dizem sobre esses produtos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-neonPurple flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">A</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Clara</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"O removedor de cravos realmente funciona! Fiquei impressionada com os resultados logo na primeira semana de uso."</p>
+                </div>
+                
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-neonPink flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mariana</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ☆
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"A escova 3 em 1 é muito prática e economiza tempo. Meu cabelo fica liso e brilhante em poucos minutos."</p>
+                </div>
+                
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-neonBlue flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Juliana</h4>
+                            <div class="flex text-yellow-400">
+                                ★ ★ ★ ★ ★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"As máscaras coreanas são incríveis! Minha pele nunca ficou tão hidratada. Vale cada centavo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-darkBg">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-title font-bold mb-12 text-center neon-text">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item pb-4">
+                    <h3 class="text-xl font-bold mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-neonPink" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Você vende esses produtos?
+                    </h3>
+                    <p class="text-gray-300 pl-8">Não. Apenas indico produtos que considero interessantes com base em minha experiência e pesquisa. As compras são realizadas diretamente nos sites dos vendedores.</p>
+                </div>
+                
+                <div class="faq-item pb-4">
+                    <h3 class="text-xl font-bold mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-neonPink" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Como é feito o pagamento?
+                    </h3>
+                    <p class="text-gray-300 pl-8">O pagamento é realizado diretamente no site do vendedor, com toda a segurança e garantias oferecidas por eles. Eu não participo do processo de venda.</p>
+                </div>
+                
+                <div class="faq-item pb-4">
+                    <h3 class="text-xl font-bold mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-neonPink" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Quem entrega?
+                    </h3>
+                    <p class="text-gray-300 pl-8">O envio é responsabilidade do site oficial onde a compra foi realizada. Cada vendedor tem suas próprias políticas de entrega e prazos.</p>
+                </div>
+                
+                <div class="faq-item pb-4">
+                    <h3 class="text-xl font-bold mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-neonPink" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Posso devolver se não gostar?
+                    </h3>
+                    <p class="text-gray-300 pl-8">As políticas de devolução e troca são definidas por cada vendedor. Recomendo verificar essas informações diretamente no site onde a compra será realizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-400 text-sm">
+                Esta página tem apenas o objetivo de indicar produtos que considero interessantes. Não sou responsável por vendas, entregas ou preços exibidos nos links.
+            </p>
+            <p class="text-gray-500 text-xs mt-4">
+                © 2023 Recomendações de Beleza. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Product tracking and link opening
+        function trackProduct(productName) {
+            // Facebook Pixel tracking
+            fbq('trackCustom', 'Click_' + productName);
+            
+            // Google Analytics tracking
+            gtag('event', 'click_' + productName);
+            
+            // Open product link in new tab
+            let productLinks = {
+                'Removedor_De_Cravos_Espinhas': 'https://s.shopee.com.br/BIe2xTQH5',
+                'Caneta_Led_45nm': 'https://s.shopee.com.br/6VChaq3eX3',
+                'Depilador_de_Cristal': 'https://s.shopee.com.br/BIe3LsvSl',
+                'Escova_Secadora_Alisador': 'https://s.shopee.com.br/9KWsyJ40D2',
+                'Escova_Eletrica_5em1': 'https://s.shopee.com.br/8Uxlz06kCh',
+                'Nano_Nevoa_Facial': 'https://s.shopee.com.br/AKPQAUrJBZ',
+                'Massageador_Facial_AntiRugas': 'https://s.shopee.com.br/5px0oPmonw',
+                'Mascara_Facial_Coreana': 'https://s.shopee.com.br/5AhK1LC7SX',
+                'Removedor_Maquiagem_Frutas': 'https://s.shopee.com.br/9f9jNmm93P',
+                'Modelador_Cabelo_Automatico': 'https://s.shopee.com.br/8pacOMdgqh',
+                'Mini_Geladeira_Portatil': 'https://s.shopee.com.br/8AKvbKkBFc',
+                'Kit_Aparador_Sobrancelha': 'https://s.shopee.com.br/4q4TdRTzGT'
+            };
+            
+            window.open(productLinks[productName], '_blank');
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
